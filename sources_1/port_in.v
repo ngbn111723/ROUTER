@@ -48,7 +48,7 @@ module port_in (data_out, reset, frame, valid, data_in, clk, request);
 				if (frame==1) next_state= start;
 				else
 					begin
-						if (count<3) next_state= header;
+						if (count<4) next_state= header;
 						else
 							if(valid==1) next_state= pad;
 							else	next_state= payload;
