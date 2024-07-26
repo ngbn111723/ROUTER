@@ -1,0 +1,96 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Apr  5 12:50:41 2024
+| Host         : BaoNgoc running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Router_control_sets_placed.rpt
+| Design       : Router
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    18 |
+|    Minimum number of control sets                        |    18 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   112 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    18 |
+| >= 0 to < 4        |    16 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              96 |           30 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              64 |           26 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              16 |           16 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+---------------+------------------------------------+------------------+----------------+--------------+
+|   Clock Signal   | Enable Signal |          Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------+---------------+------------------------------------+------------------+----------------+--------------+
+|  clock_IBUF_BUFG | Pin2/address  | Pin2/FSM_onehot_state_reg_n_0_[0]  |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin3/address  | Pin3/FSM_onehot_state_reg_n_0_[0]  |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin4/address  | Pin4/FSM_onehot_state_reg_n_0_[0]  |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin11/address | Pin11/FSM_onehot_state_reg_n_0_[0] |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin12/address | Pin12/FSM_onehot_state_reg_n_0_[0] |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin13/address | Pin13/FSM_onehot_state_reg_n_0_[0] |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin14/address | Pin14/FSM_onehot_state_reg_n_0_[0] |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin8/address  | Pin8/FSM_onehot_state_reg_n_0_[0]  |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin15/address | Pin15/FSM_onehot_state_reg_n_0_[0] |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin9/address  | Pin9/FSM_onehot_state_reg_n_0_[0]  |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin10/address | Pin10/FSM_onehot_state_reg_n_0_[0] |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin7/address  | Pin7/FSM_onehot_state_reg_n_0_[0]  |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin5/address  | Pin5/FSM_onehot_state_reg_n_0_[0]  |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin6/address  | Pin6/FSM_onehot_state_reg_n_0_[0]  |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin0/address  | Pin0/FSM_onehot_state_reg_n_0_[0]  |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG | Pin1/address  | Pin1/FSM_onehot_state_reg_n_0_[0]  |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG |               | Pin15/SS[0]                        |               26 |             64 |         2.46 |
+|  clock_IBUF_BUFG |               |                                    |               30 |             96 |         3.20 |
++------------------+---------------+------------------------------------+------------------+----------------+--------------+
+
+

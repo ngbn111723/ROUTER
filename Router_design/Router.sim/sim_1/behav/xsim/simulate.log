@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+PASS TESTCASE 1
+PASS TESTCASE 2
+PASS TESTCASE 3
+$stop called at time : 1375 ns : File "C:/Users/LENOVO/Desktop/CE409/PRACTICE/NguyenGiaBaoNgoc_21520366_LAB02_Vivado/Router/Router.srcs/sim_1/new/router_test_top.sv" Line 120

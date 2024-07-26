@@ -1,0 +1,257 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Apr  5 12:49:19 2024
+# Process ID: 27596
+# Current directory: C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.runs/synth_1
+# Command line: vivado.exe -log Router.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Router.tcl
+# Log file: C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.runs/synth_1/Router.vds
+# Journal file: C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.runs/synth_1\vivado.jou
+# Running On: BaoNgoc, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 8379 MB
+#-----------------------------------------------------------
+source Router.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/utils_1/imports/synth_1/Router.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/utils_1/imports/synth_1/Router.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Router -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2864
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-9400] empty statement in sequential block [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/port_in.v:131]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 836.801 ; gain = 409.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Router' [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/Router.v:2]
+INFO: [Synth 8-6157] synthesizing module 'port_in' [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/port_in.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/port_in.v:38]
+INFO: [Synth 8-226] default block is never used [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/port_in.v:78]
+INFO: [Synth 8-226] default block is never used [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/port_in.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'port_in' (0#1) [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/port_in.v:1]
+INFO: [Synth 8-6157] synthesizing module 'classifi' [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:1]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:281]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:282]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:283]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:284]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:285]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:286]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:287]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:288]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:289]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:290]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:291]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:292]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:293]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:294]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:295]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:296]
+INFO: [Synth 8-6155] done synthesizing module 'classifi' (0#1) [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/classifi.v:1]
+INFO: [Synth 8-6157] synthesizing module 'port_out' [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/port_out.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'port_out' (0#1) [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/port_out.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Router' (0#1) [C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.srcs/sources_1/imports/Router_quartus/Router.v:2]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 933.281 ; gain = 506.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 933.281 ; gain = 506.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 933.281 ; gain = 506.285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'port_in'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   start |                             0001 |                               00
+                  header |                             0010 |                               01
+                     pad |                             0100 |                               10
+                 payload |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'port_in'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 933.281 ; gain = 506.285
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    3 Bit       Adders := 16    
++---Registers : 
+	                4 Bit    Registers := 16    
+	                3 Bit    Registers := 16    
++---Muxes : 
+	  16 Input   16 Bit        Muxes := 16    
+	   2 Input   16 Bit        Muxes := 16    
+	   4 Input    4 Bit        Muxes := 16    
+	   2 Input    4 Bit        Muxes := 112   
+	  16 Input    4 Bit        Muxes := 16    
+	   4 Input    1 Bit        Muxes := 16    
+	   2 Input    1 Bit        Muxes := 16    
+	  16 Input    1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1156.613 ; gain = 729.617
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1165.352 ; gain = 738.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1165.488 ; gain = 738.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1165.488 ; gain = 738.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1165.488 ; gain = 738.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1165.488 ; gain = 738.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1165.488 ; gain = 738.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1165.488 ; gain = 738.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1165.488 ; gain = 738.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |    17|
+|3     |LUT2  |    36|
+|4     |LUT3  |   140|
+|5     |LUT4  |    72|
+|6     |LUT5  |    64|
+|7     |LUT6  |   940|
+|8     |FDRE  |   160|
+|9     |FDSE  |    16|
+|10    |IBUF  |    50|
+|11    |OBUF  |    48|
+|12    |OBUFT |    16|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |  1560|
+|2     |  Pin0   |port_in    |    94|
+|3     |  Pin1   |port_in_0  |    75|
+|4     |  Pin10  |port_in_1  |    91|
+|5     |  Pin11  |port_in_2  |    91|
+|6     |  Pin12  |port_in_3  |    75|
+|7     |  Pin13  |port_in_4  |    91|
+|8     |  Pin14  |port_in_5  |    75|
+|9     |  Pin15  |port_in_6  |    76|
+|10    |  Pin2   |port_in_7  |    91|
+|11    |  Pin3   |port_in_8  |    89|
+|12    |  Pin4   |port_in_9  |    89|
+|13    |  Pin5   |port_in_10 |   123|
+|14    |  Pin6   |port_in_11 |    75|
+|15    |  Pin7   |port_in_12 |    75|
+|16    |  Pin8   |port_in_13 |   107|
+|17    |  Pin9   |port_in_14 |   127|
+|18    |  classi |classifi   |     1|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1165.488 ; gain = 738.492
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1165.488 ; gain = 738.492
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1165.488 ; gain = 738.492
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1177.406 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1250.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: e9efad78
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1250.230 ; gain = 830.211
+INFO: [Common 17-1381] The checkpoint 'C:/Users/LENOVO/Desktop/CE433/Practice/LAB02/Router/Router.runs/synth_1/Router.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Router_utilization_synth.rpt -pb Router_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  5 12:49:54 2024...
